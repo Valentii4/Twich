@@ -1,5 +1,5 @@
 # Twich
-Dynamic UITableView, MVVM-C with RXSwift, CoreData, Alamofire
+Dynamic UITableView, MVVM-C with RXSwift, CoreData, Alamofire, CocoaPods
 
 Необходимо разработать мобильное приложение для просмотра топовых стриминговых игр с сервиса
 Twitch. При выполнении можно использовать заранее сгенерированный API ключ: здесь: sd4grh0omdj9a31exnpikhrmsu3v46.
