@@ -7,5 +7,5 @@
 
 import Foundation
 protocol ApiResponse: Codable {
-    init(json: [String: Any])
+    init?(json: [String: Any])
 }

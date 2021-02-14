@@ -6,11 +6,18 @@ struct BoxOrLogo: ApiResponse {
     let small: String
     let template: String
     
-     init(json: [String : Any]) {
-        large = json["large"] as! String
-        medium = json["medium"] as! String
-        small = json["small"] as! String
-        template = json["template"] as! String
+    init?(json: [String : Any]) {
+        guard let large = json["large"] as? String,
+              let medium = json["medium"] as? String,
+              let small = json["small"] as? String,
+              let template = json["template"] as? String
+        else{
+            return nil
+        }
+        self.large = large
+        self.medium = medium
+        self.small = small
+        self.template = template
     }
     
     
